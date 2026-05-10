@@ -1,52 +1,75 @@
-# Traveloop
+# Traveloop – AI Powered Travel Planning Module
 
-Traveloop is an AI-powered travel planning module built on Odoo.  
-It helps users create trips, manage budgets, organize activities, and share public trip pages.
+Traveloop is an Odoo-based travel management module designed to simplify trip planning and budgeting.  
+The project was developed as a hackathon MVP to demonstrate how Odoo can be used to build smart and scalable travel solutions.
 
-## Features
+The module allows users to create trips, manage travel expenses, organize activities, and publish trip details through a public webpage interface.
 
-- Trip management
-- Budget tracking
-- Activity planning
-- Public trip sharing page
-- Odoo website integration
-- Modular Odoo architecture
+---
 
-## Tech Stack
+# Features
 
-- Odoo
+## Trip Management
+- Create and manage travel plans
+- Add trip start and end dates
+- Store destination and travel details
+
+## Budget Tracking
+- Separate budget categories:
+  - Transport
+  - Hotel
+  - Food
+  - Activities
+- Automatic total budget calculation
+
+## Activity Planning
+- Add trip activities and notes
+- Organize schedules for better planning
+
+## Public Trip Page
+- Share trip details through a public webpage
+- Dynamic rendering using Odoo QWeb templates
+
+## Odoo Integration
+- Built using Odoo module architecture
+- Uses models, controllers, and XML views
+- Easy to extend and customize
+
+---
+
+# Tech Stack
+
 - Python
-- XML
+- Odoo Framework
+- XML / QWeb Templates
 - PostgreSQL
 - HTML/CSS
+- Git & GitHub
 
-## Project Structure
+---
 
+# Project Structure
+
+```bash
 traveloop_module/
 │
-├── models/
 ├── controllers/
+│   └── main.py
+│
+├── models/
+│   ├── activity.py
+│   ├── budget.py
+│   ├── city.py
+│   └── notes.py
+│
 ├── views/
+│   ├── public_templates.xml
+│   └── other_views.xml
+│
 ├── security/
+│
 ├── static/
+│
+├── __init__.py
 ├── __manifest__.py
-
-## Installation
-
-1. Clone the repository
-2. Place module inside Odoo addons folder
-3. Restart Odoo server
-4. Update Apps List
-5. Install Traveloop module
-
-## Future Improvements
-
-- AI itinerary generation
-- Expense prediction
-- Hotel & transport APIs
-- Smart recommendations
-
-## Author
-
-Rahul Jaiswal
-Sanskar Kushwah
+└── README.md
