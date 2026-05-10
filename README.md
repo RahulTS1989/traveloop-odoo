@@ -1,44 +1,52 @@
 # Traveloop
 
-AI-powered collaborative travel planner built with Odoo.
+Traveloop is an AI-powered travel planning module built on Odoo.  
+It helps users create trips, manage budgets, organize activities, and share public trip pages.
 
 ## Features
 
-- Multi-city itinerary planning
-- Drag-and-drop trip stops
+- Trip management
 - Budget tracking
-- Expense management
-- Public trip sharing
-- AI itinerary suggestions
+- Activity planning
+- Public trip sharing page
+- Odoo website integration
+- Modular Odoo architecture
 
 ## Tech Stack
 
 - Odoo
 - Python
+- XML
 - PostgreSQL
-- XML/QWeb
-- OpenAI API
+- HTML/CSS
+
+## Project Structure
+
+traveloop_module/
+│
+├── models/
+├── controllers/
+├── views/
+├── security/
+├── static/
+├── __manifest__.py
 
 ## Installation
 
-```bash
-git clone https://github.com/USERNAME/traveloop-odoo.git
-```
+1. Clone the repository
+2. Place module inside Odoo addons folder
+3. Restart Odoo server
+4. Update Apps List
+5. Install Traveloop module
 
-## Run
+## Future Improvements
 
-```bash
-docker-compose up
-```
+- AI itinerary generation
+- Expense prediction
+- Hotel & transport APIs
+- Smart recommendations
 
-## Screenshots
+## Author
 
-
-
-## Demo Video
-
-
-
-## Team
-
-- Your Name
+Rahul Jaiswal
+Sanskar Kushwah
